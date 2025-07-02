@@ -1,20 +1,5 @@
 title: "Alexandre Sokoloski"
-email: ""
 description: "Engenheiro Ambiental & Mestrando UFPR"
 baseurl: ""
 url: "https://sokoloski.github.io"
-
-plugins:
-  - jekyll-feed
-
-theme: minimal-mistakes-jekyll
-
-navbar:
-  title: "Sokoloski"
-  secondary:
-    - title: "Sobre"
-      url: /sobre/
-    - title: "Projetos"
-      url: /projetos/
-    - title: "Publicações"
-      url: /publicacoes/
+theme: minima
