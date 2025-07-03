@@ -5,7 +5,7 @@ permalink: /sobre/
 ---
 
 <div style="display: flex; align-items: flex-start; gap: 20px; flex-wrap: wrap;">
-  <img src="/perfil.jpg" alt="Foto de Alexandre Sokoloski" style="max-width: 200px; border-radius: 10px; margin-bottom: 20px;">
+  <img src="/perfil.png" alt="Foto de Alexandre Sokoloski" style="max-width: 200px; border-radius: 10px; margin-bottom: 20px;">
 
   <div style="flex: 1; min-width: 250px;">
 
