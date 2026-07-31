@@ -31,7 +31,7 @@ permalink: /publicacoes/
 </section>
 
 <section class="language-content" data-language="en" hidden>
-  <h2>Publications</h2>
+  <h2>Research</h2>
   <h3>2025</h3>
   <ol>
     <li>Macedo, A. S. A. D., &amp; Männich, M. (2025). <em>Seasonal streamflow: A quantitative analysis of water availability in the Brazilian water rights allocation process</em>. <strong>Brazilian Symposium on Water Resources (SBRH)</strong>.</li>
@@ -47,7 +47,7 @@ permalink: /publicacoes/
   </ol>
   <h3>2023</h3>
   <ol>
-    <li>Macedo, A. S. A. D., &amp; Männich, M. (2023). <em>A brief review on seasonal reference flows in Brazil</em>. <strong>XXV Brazilian Symposium on Water Resources (SBRH)</strong>, November 19–24, 2023, Sergipe. <a href="https://anais.abrhidro.org.br/job.php?Job=15869">Proceedings</a></li>
+    <li>Macedo, A. S. A. D., &amp; Männich, M. (2023). <em>A brief review on seasonal reference flows in Brazil</em>. <strong>XXV Brazilian Symposium on Water Resources (SBRH)</strong>, November 19–24, 2023, Sergipe. <a href="https://anais.abrhidro.org.br/job.php?Job=15869">PDF</a></li>
   </ol>
 </section>
 

@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Bem-vindo
+title: Welcome
 ---
 
 <div class="language-switcher" aria-label="Selecionar idioma">
