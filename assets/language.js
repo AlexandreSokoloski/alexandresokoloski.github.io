@@ -6,6 +6,10 @@
     pt: { '/sobre/': 'Sobre mim', '/projetos/': 'Projetos', '/publicacoes/': 'Publicações' },
     en: { '/sobre/': 'About me', '/projetos/': 'Projects', '/publicacoes/': 'Publications' }
   };
+  var titles = {
+    pt: { '/': 'Bem-vindo', '/sobre/': 'Sobre mim', '/projetos/': 'Projetos', '/publicacoes/': 'Publicações' },
+    en: { '/': 'Welcome', '/sobre/': 'About me', '/projetos/': 'Projects', '/publicacoes/': 'Publications' }
+  };
 
   function setLanguage(language) {
     var selected = language === 'en' ? 'en' : 'pt';
@@ -23,6 +27,10 @@
       var path = new URL(link.href).pathname;
       if (labels[selected][path]) link.textContent = labels[selected][path];
     });
+
+    var path = window.location.pathname;
+    var pageTitle = document.querySelector('.post-title, .page-heading');
+    if (pageTitle && titles[selected][path]) pageTitle.textContent = titles[selected][path];
 
     try { localStorage.setItem(storageKey, selected); } catch (error) {}
   }

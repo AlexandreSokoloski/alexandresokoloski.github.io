@@ -26,6 +26,10 @@
   color: #fff;
 }
 
+.language-content[hidden] {
+  display: none !important;
+}
+
 .profile {
   align-items: flex-start;
   display: flex;
@@ -41,6 +45,14 @@
 
 .profile > div {
   flex: 1 1 300px;
+}
+
+.language-content ol {
+  margin-left: 1.4rem;
+}
+
+.language-content li {
+  margin-bottom: 0.85rem;
 }
 
 @media (max-width: 600px) {
