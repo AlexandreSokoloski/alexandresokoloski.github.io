@@ -2,6 +2,7 @@
   'use strict';
 
   var storageKey = 'portfolio-language';
+  var themeStorageKey = 'portfolio-theme';
   var labels = {
     pt: { '/sobre/': 'Sobre mim', '/projetos/': 'Projetos', '/publicacoes/': 'Publicações' },
     en: { '/sobre/': 'About me', '/projetos/': 'Projects', '/publicacoes/': 'Publications' }
@@ -41,5 +42,33 @@
 
   document.querySelectorAll('.language-switcher [data-language]').forEach(function (button) {
     button.addEventListener('click', function () { setLanguage(button.dataset.language); });
+  });
+
+  function setTheme(theme) {
+    document.documentElement.dataset.theme = theme;
+    try { localStorage.setItem(themeStorageKey, theme); } catch (error) {}
+
+    var toggle = document.querySelector('.theme-toggle');
+    if (toggle) {
+      var isDark = theme === 'dark';
+      toggle.textContent = isDark ? '☀' : '☾';
+      toggle.setAttribute('aria-label', isDark ? 'Ativar tema claro' : 'Ativar tema escuro');
+      toggle.title = toggle.getAttribute('aria-label');
+    }
+  }
+
+  var savedTheme;
+  try { savedTheme = localStorage.getItem(themeStorageKey); } catch (error) {}
+  var initialTheme = savedTheme || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+
+  var themeToggle = document.createElement('button');
+  themeToggle.className = 'theme-toggle';
+  themeToggle.type = 'button';
+  var headerTarget = document.querySelector('.site-header .wrapper');
+  if (headerTarget) headerTarget.appendChild(themeToggle);
+  setTheme(initialTheme);
+
+  themeToggle.addEventListener('click', function () {
+    setTheme(document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark');
   });
 }());
