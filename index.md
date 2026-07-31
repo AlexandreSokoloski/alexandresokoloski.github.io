@@ -1,10 +1,10 @@
 ---
 layout: home
-title: Welcome
+title: Bem-vindo
 ---
 ## Alexandre Sokoloski de Azevedo Delduque de Macedo
 
-Engenheiro Ambiental (UFPR) • Mestrando em Engenharia Ambiental (UFPR)
+Graduado e Mestre em Engenharia Ambiental (UFPR)  
 
 [LinkedIn](https://www.linkedin.com/in/sokoloski/)
 
