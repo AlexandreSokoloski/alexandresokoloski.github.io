@@ -1,0 +1,50 @@
+---
+---
+
+@import "minima";
+
+.language-switcher {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.35rem;
+  margin: 0 0 1.5rem;
+}
+
+.language-switcher button {
+  border: 1px solid #175f73;
+  border-radius: 999px;
+  background: #fff;
+  color: #175f73;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0.35rem 0.7rem;
+}
+
+.language-switcher button[aria-pressed="true"] {
+  background: #175f73;
+  color: #fff;
+}
+
+.profile {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.profile img {
+  border-radius: 10px;
+  height: auto;
+  max-width: 200px;
+}
+
+.profile > div {
+  flex: 1 1 300px;
+}
+
+@media (max-width: 600px) {
+  .profile img {
+    max-width: 160px;
+  }
+}
